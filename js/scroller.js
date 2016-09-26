@@ -21,13 +21,10 @@ Touch_Moove = 0;  // Коорд текущ. точки
      up_moove = up_moove.substring(22, 26);
      up_moove = parseInt(up_moove);
      up_moove = up_moove + 10;
-     up_moove = up_moove - (up_moove*2)
-     console.log(up_moove, "up_moove");     
+     up_moove = up_moove - (up_moove*2);
      scroller($(".scroller"), up_moove);
 
 });//---touchmove 
-
-
 
 
  $(".scroller").on("touchend", function(e) {     
