@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Georgia';
+    src: url('..//css/fonts/Georgia.ttf');
+    src: url('..//css/fonts/Georgia.eot') format('embedded-opentype'),
+         url('..//css/fonts/Georgia.woff') format('woff'),
+         url('..//css/fonts/Georgia.ttf') format('truetype'),
+         url('..//css/fonts/Georgia.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Georgia-bold';
+    src: url('..//css/fonts/Georgia-bold.ttf');
+    src: url('..//css/fonts/Georgia-bold.eot') format('embedded-opentype'),
+         url('..//css/fonts/Georgia-bold.woff') format('woff'),
+         url('..//css/fonts/Georgia-bold.ttf') format('truetype'),
+         url('..//css/fonts/Georgia-bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Georgia-Italic';
+    src: url('..//css/fonts/Georgia-Italic.ttf');
+    src: url('..//css/fonts/Georgia-Italic.eot?#iefix') format('embedded-opentype'),
+         url('..//css/fonts/Georgia-Italic.woff') format('woff'),
+         url('..//css/fonts/Georgia-Italic.ttf') format('truetype'),
+         url('..//css/fonts/Georgia-Italic.svg# Georgia-Italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'GeorgiaRegular';
+    src: url('..//css/fonts/GeorgiaRegular.ttf');
+    src: url('..//css/fonts/GeorgiaRegular.eot') format('embedded-opentype'),
+         url('..//css/fonts/GeorgiaRegular.ttf') format('truetype'),
+         url('..//css/fonts/GeorgiaRegular.svg GeorgiaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_Herold-Regular';
+	src: url('fonts/Herold-Regular.eot');
+	src: local('☺'), url('fonts/Herold-Regular.woff') format('woff'), url('fonts/Herold-Regular.ttf') format('truetype'), url('fonts/Herold-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family:'palai';
+    src: url('..//css/fonts/palai.ttf');
+    src: url('..//css/fonts/palai.eot') format('embedded-opentype'),
+         url('..//css/fonts/palai.woff') format('woff'),
+         url('..//css/fonts/palai.ttf') format('truetype'),
+         url('..//css/fonts/palai.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+

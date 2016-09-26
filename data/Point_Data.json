@@ -1,0 +1,114 @@
+{
+    "points": {
+        "point": {
+            "id": "Bogunino",
+            "type": "active",
+            "header": "Header",
+            "description": "data",
+            "position": {
+                "step_1": {
+                    "top": "20px",
+                    "left": "20px"
+                }
+
+            }
+
+
+        },
+        "point": {
+            "id": "Gubin_Ugol",
+            "type": "active",
+            "header": "Header",
+            "description": "data",
+            "position": {
+                "step_1": {
+                    "top": "20px",
+                    "left": "20px"
+                }
+
+            }
+
+
+        },
+            "point": {
+            "id": "Kimra",
+            "type": "active",
+            "header": "Header",
+            "description": "data",
+            "position": {
+                "step_1": {
+                    "top": "20px",
+                    "left": "20px"
+                }
+
+            }
+
+
+        },
+            "point": {
+            "id": "kimra",
+            "type": "active",
+            "header": "Header",
+            "description": "data",
+            "position": {
+                "step_1": {
+                    "top": "20px",
+                    "left": "20px"
+                }
+
+            }
+
+
+        },
+            "point": {
+            "id": "kimra",
+            "type": "active",
+            "header": "Header",
+            "description": "data",
+            "position": {
+                "step_1": {
+                    "top": "20px",
+                    "left": "20px"
+                }
+
+            }
+
+
+        },
+            "point": {
+            "id": "kimra",
+            "type": "active",
+            "header": "Header",
+            "description": "data",
+            "position": {
+                "step_1": {
+                    "top": "20px",
+                    "left": "20px"
+                }
+
+            }
+
+
+        },
+            "point": {
+            "id": "kimra",
+            "type": "active",
+            "header": "Header",
+            "description": "data",
+            "position": {
+                "step_1": {
+                    "top": "20px",
+                    "left": "20px"
+                }
+
+            }
+
+
+        }
+        
+        
+        
+        
+
+    }
+}
