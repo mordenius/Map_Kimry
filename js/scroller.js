@@ -21,7 +21,7 @@ Touch_Moove = 0;  // Коорд текущ. точки
      up_moove = up_moove.substring(22, 26);
      up_moove = parseInt(up_moove);
      up_moove = up_moove + 10;
-     console.log(up_moove, "up_moove")
+    // console.log(up_moove, "up_moove")
      if(up_moove <= -144){
          up_moove = -300
      }
