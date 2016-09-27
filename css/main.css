@@ -168,7 +168,7 @@ body {
     font-size: 17.5px;
     color: #333333;
     font-weight: bold;
-    margin: 22.5px 10px 0 10px;
+    margin: 17.5px 10px 0 22px;
 }
 
 .Middle_Sector > ul > li > .Vilage_Name {
@@ -191,7 +191,7 @@ body {
 .Middle_Sector > ul > li > .Nam_People {
     float: right;
     width: 107px;
-    margin: 10px 15.5px 0 0;
+    margin: 10px 1.5px 0 0;
 }
 
 .Middle_Sector > ul > li > .Nam_People > .female > img, .Middle_Sector > ul > li > .Nam_People > .man > img {
@@ -603,7 +603,7 @@ svg {
     background: #dbdbdb;
     position: absolute;
     top: 274px;
-    left: 410px;
+    left: 0px;
     z-index: 4;
     pointer-events: none;
 }
