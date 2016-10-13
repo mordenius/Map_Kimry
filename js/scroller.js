@@ -29,8 +29,8 @@ Touch_Moove = 0;  // Коорд текущ. точки
      scroller($(".scroller"), up_moove);
 
 });//---touchmove 
-
-
+    
+    
  $(".scroller").on("touchend", function(e) {     
      event.preventDefault();
      event.stopPropagation();
