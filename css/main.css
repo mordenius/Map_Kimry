@@ -54,9 +54,10 @@ body {
 }
 
 .Fourth_Frame {
-    margin: 10px auto;
-    width: 1860px;
-    height: 1020px;
+    margin: 127px auto;
+    /* margin-left: 9px; */
+    width: 1862px;
+    height: 907px;
     overflow: hidden;
     border: 1px solid rgb(45, 45, 42);
     background-color: #fefced;
@@ -64,13 +65,14 @@ body {
 
 .Right_Info_Block_1_Frame {
     width: 420px;
-    height: 1021px;
+    height: 1032px;
     float: right;
     border-left: 4px solid rgb(0, 0, 0);
     position: relative;
     z-index: 1000;
     background: #fefced;
-    top: -1016.5px;
+    top: -1172.5px;
+    left: -24px;
     margin-right: -424.4px;
 }
 
@@ -86,9 +88,10 @@ body {
     height: 1034px;
     float: left;
     border-right: 4px solid rgb(0, 0, 0);
-    position: relative;
+    position: absolute;
     z-index: 1000;
-    top: -1020px;
+    left: 23px;
+    top: 26px;
     background: #fefced;
 }
 
@@ -451,7 +454,7 @@ z-index: 2;
     position: relative;
     z-index: 4;
     float: left;
-    margin-top: 452.5px;
+    margin-top: 335.5px;
     margin-left: -30px;
     background: url(..//img/Arrow_Left.png);
 }
@@ -594,6 +597,18 @@ svg {
     z-index: 100;
 }
 
+.Cont_Main_Menuu {
+  margin: 0 auto;
+  padding: 0 0 0 0;
+  position: absolute;
+  top: 26px;
+  z-index: 1;
+  height: 120px;
+  left: 25px;
+  width: 1870px;
+  background: url(..//img/PL.Korcheevskii.jpg);
+}
+
 
 /*scroll bar*/
 
@@ -615,4 +630,3 @@ svg {
   position: relative;
   pointer-events: none;
 }
-
