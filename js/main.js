@@ -317,19 +317,19 @@ $(window).on("touchmove", function(e) {
         $('.box').css({
             "width": width
         });
-        let pos = $('#Bogunino').position();
+        var pos = $('#Bogunino').position();
         $('#Bogunino').css("left", (pos.left * 1.0102)).css("top", (pos.top * 1.0108));
-        let pos1 = $('#Gubin_Ugol').position();
+        var pos1 = $('#Gubin_Ugol').position();
         $('#Gubin_Ugol').css("left", (pos1.left * 1.0102)).css("top", (pos1.top * 1.0108));
-        let pos3 = $('#Kimra').position();
+        var pos3 = $('#Kimra').position();
         $('#Kimra').css("left", (pos3.left * 1.0102)).css("top", (pos3.top * 1.0108));
-        let pos4 = $('#Shutovo').position();
+        var pos4 = $('#Shutovo').position();
         $('#Shutovo').css("left", (pos4.left * 1.0102)).css("top", (pos4.top * 1.0108));
-        let pos5 = $('#Tihonovo').position();
+        var pos5 = $('#Tihonovo').position();
         $('#Tihonovo').css("left", (pos5.left * 1.0102)).css("top", (pos5.top * 1.0108));
-        let pos6 = $('#Malchevka').position();
+        var pos6 = $('#Malchevka').position();
         $('#Malchevka').css("left", (pos6.left * 1.0102)).css("top", (pos6.top * 1.0108));
-        let pos7 = $('#Emelyanovka').position();
+        var pos7 = $('#Emelyanovka').position();
         $('#Emelyanovka').css("left", (pos7.left * 1.0102)).css("top", (pos7.top * 1.0108));
 
 
@@ -353,19 +353,19 @@ $(window).on("touchmove", function(e) {
         $('.box').css({
             "width": width
         });
-        let pos = $('#Bogunino').position();
+        var pos = $('#Bogunino').position();
         $('#Bogunino').css("left", (pos.left / 1.0102)).css("top", (pos.top / 1.0108));
-        let pos1 = $('#Gubin_Ugol').position();
+        var pos1 = $('#Gubin_Ugol').position();
         $('#Gubin_Ugol').css("left", (pos1.left / 1.0102)).css("top", (pos1.top / 1.0108));
-        let pos3 = $('#Kimra').position();
+        var pos3 = $('#Kimra').position();
         $('#Kimra').css("left", (pos3.left / 1.0102)).css("top", (pos3.top / 1.0108));
-        let pos4 = $('#Shutovo').position();
+        var pos4 = $('#Shutovo').position();
         $('#Shutovo').css("left", (pos4.left / 1.0102)).css("top", (pos4.top / 1.0108));
-        let pos5 = $('#Tihonovo').position();
+        var pos5 = $('#Tihonovo').position();
         $('#Tihonovo').css("left", (pos5.left / 1.0102)).css("top", (pos5.top / 1.0108));
-        let pos6 = $('#Malchevka').position();
+        var pos6 = $('#Malchevka').position();
         $('#Malchevka').css("left", (pos6.left / 1.0102)).css("top", (pos6.top / 1.0108));
-        let pos7 = $('#Emelyanovka').position();
+        var pos7 = $('#Emelyanovka').position();
         $('#Emelyanovka').css("left", (pos7.left / 1.0102)).css("top", (pos7.top / 1.0108));
         Map_Left = $('.box').css('left');
         $('.box').css({
