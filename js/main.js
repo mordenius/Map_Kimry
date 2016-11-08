@@ -1,5 +1,6 @@
 $(function() {
     // -- data_point 
+    var multitouch = true;
     var Point_Mass = [{
         "point": {
             "id": "Kimra",
@@ -135,13 +136,42 @@ $(function() {
         }
 
     }];
-    // -- data_point_end    
+    // -- data_point_end 
+    
+    
+$(window).on("touchstart", function(e) { 
+    //--- event.preventDefault();
+    //--- event.stopPropagation();
+    if(event.targetTouches.length == 2){
+       multitouch = true; 
+    }else{
+       multitouch = false;     
+    }
+    //--console.log(multitouch, "multitouch"); 
+    //--console.log(event.targetTouches.length, "event.targetTouches.length");
+});
+    
+$(window).on("touchmove", function(e) { 
+    //--- event.preventDefault();
+    //--- event.stopPropagation();
+    if(event.targetTouches.length == 2){
+       multitouch = true; 
+    }else{
+       multitouch = false;     
+    }
+    //--console.log(multitouch, "multitouch"); 
+    //--console.log(event.targetTouches.length, "event.targetTouches.length")
+    
+    if(multitouch==false){  
+    }
+    
+});    
+    
 
     // -- create_point_dom
     function create_point_dom() {
         var Teg_El = "<div><div class='active'></div><div class='container2'><button class='pulse-button'></button></div></div>";
         var list_nambers = 0;
-
         function Point_Alignment() {
             $.each(Point_Mass, function(key, value) {
                 list_nambers++;
@@ -277,7 +307,7 @@ $(function() {
     function width_in() {
         width_in_v = true;
         var width = $('.map').width();
-        width = width * 1.1;
+        width = width * 1.01;
         if (width > 3342) {
             return;
         }
@@ -288,19 +318,19 @@ $(function() {
             "width": width
         });
         let pos = $('#Bogunino').position();
-        $('#Bogunino').css("left", (pos.left * 1.102)).css("top", (pos.top * 1.108));
+        $('#Bogunino').css("left", (pos.left * 1.0102)).css("top", (pos.top * 1.0108));
         let pos1 = $('#Gubin_Ugol').position();
-        $('#Gubin_Ugol').css("left", (pos1.left * 1.102)).css("top", (pos1.top * 1.108));
+        $('#Gubin_Ugol').css("left", (pos1.left * 1.0102)).css("top", (pos1.top * 1.0108));
         let pos3 = $('#Kimra').position();
-        $('#Kimra').css("left", (pos3.left * 1.102)).css("top", (pos3.top * 1.108));
+        $('#Kimra').css("left", (pos3.left * 1.0102)).css("top", (pos3.top * 1.0108));
         let pos4 = $('#Shutovo').position();
-        $('#Shutovo').css("left", (pos4.left * 1.102)).css("top", (pos4.top * 1.108));
+        $('#Shutovo').css("left", (pos4.left * 1.0102)).css("top", (pos4.top * 1.0108));
         let pos5 = $('#Tihonovo').position();
-        $('#Tihonovo').css("left", (pos5.left * 1.102)).css("top", (pos5.top * 1.108));
+        $('#Tihonovo').css("left", (pos5.left * 1.0102)).css("top", (pos5.top * 1.0108));
         let pos6 = $('#Malchevka').position();
-        $('#Malchevka').css("left", (pos6.left * 1.102)).css("top", (pos6.top * 1.108));
+        $('#Malchevka').css("left", (pos6.left * 1.0102)).css("top", (pos6.top * 1.0108));
         let pos7 = $('#Emelyanovka').position();
-        $('#Emelyanovka').css("left", (pos7.left * 1.102)).css("top", (pos7.top * 1.108));
+        $('#Emelyanovka').css("left", (pos7.left * 1.0102)).css("top", (pos7.top * 1.0108));
 
 
         //corection_position();
@@ -316,7 +346,7 @@ $(function() {
         if (width < 1800) {
             return;
         }
-        width = width / 1.1;
+        width = width / 1.01;
         $('.map').css({
             "width": width
         });
@@ -324,19 +354,19 @@ $(function() {
             "width": width
         });
         let pos = $('#Bogunino').position();
-        $('#Bogunino').css("left", (pos.left / 1.102)).css("top", (pos.top / 1.108));
+        $('#Bogunino').css("left", (pos.left / 1.0102)).css("top", (pos.top / 1.0108));
         let pos1 = $('#Gubin_Ugol').position();
-        $('#Gubin_Ugol').css("left", (pos1.left / 1.102)).css("top", (pos1.top / 1.108));
+        $('#Gubin_Ugol').css("left", (pos1.left / 1.0102)).css("top", (pos1.top / 1.0108));
         let pos3 = $('#Kimra').position();
-        $('#Kimra').css("left", (pos3.left / 1.102)).css("top", (pos3.top / 1.108));
+        $('#Kimra').css("left", (pos3.left / 1.0102)).css("top", (pos3.top / 1.0108));
         let pos4 = $('#Shutovo').position();
-        $('#Shutovo').css("left", (pos4.left / 1.102)).css("top", (pos4.top / 1.108));
+        $('#Shutovo').css("left", (pos4.left / 1.0102)).css("top", (pos4.top / 1.0108));
         let pos5 = $('#Tihonovo').position();
-        $('#Tihonovo').css("left", (pos5.left / 1.102)).css("top", (pos5.top / 1.108));
+        $('#Tihonovo').css("left", (pos5.left / 1.0102)).css("top", (pos5.top / 1.0108));
         let pos6 = $('#Malchevka').position();
-        $('#Malchevka').css("left", (pos6.left / 1.102)).css("top", (pos6.top / 1.108));
+        $('#Malchevka').css("left", (pos6.left / 1.0102)).css("top", (pos6.top / 1.0108));
         let pos7 = $('#Emelyanovka').position();
-        $('#Emelyanovka').css("left", (pos7.left / 1.102)).css("top", (pos7.top / 1.108));
+        $('#Emelyanovka').css("left", (pos7.left / 1.0102)).css("top", (pos7.top / 1.0108));
         Map_Left = $('.box').css('left');
         $('.box').css({
             'left': Map_Left * 1.3
@@ -353,7 +383,7 @@ $(function() {
 
         $('.box').animate({
             "left": Box_Vidth
-        }, 400);
+        }, 0);
 
         Corect_Height();
 
@@ -368,11 +398,11 @@ $(function() {
     mc.add([pinch]);
     mc.on("pinchin", function(ev) {
         ev.preventDefault();
-        width_in();
+        width_out();   
     });
     mc.on("pinchout", function(ev) {
         ev.preventDefault();
-        width_out();
+        width_in(); 
     });
     mc.on("panmove", function(ev) {
 
@@ -407,8 +437,6 @@ $(".point").click(function() {
 });
 
 
-
-
     //--- Zooom_Button
 $('.Zomm_In').click(function() {
         width_in();
@@ -420,7 +448,6 @@ $('.Zoom_Out').click(function() {
 });
     //--- Zooom_Button
 
-
 var disable_point = function() {
         $('.swiper-slide').removeClass('activet');
         $('.point').removeClass('active_point');
@@ -430,21 +457,28 @@ var disable_point = function() {
 
 var map = {
     scroll_map: scroll_funck = function() {
+        
         var initialPoint;
         var finalPoint;
         var nowPoint;
         var drag = false;
         $(".box").on('touchstart', function(e) {
-            initialPoint = event.changedTouches[0];
-            drag = true;
+          if(multitouch == false){
+             initialPoint = event.changedTouches[0];
+             drag = true; 
+          }
+            
         }).on('touchend', function() {
-            finalPoint = event.changedTouches[0];
-            $(this).data({
+          if(multitouch == false){
+             finalPoint = event.changedTouches[0];
+             $(this).data({
                 startX: 0,
                 startY: 0,
-            });
-            drag = false;
+             });
+             drag = false;
+           }
         }).on('touchmove', function(e) {
+            if(multitouch == false){
             nowPoint = event.changedTouches[0];
             //  console.log(nowPoint.screenX, nowPoint.screenY);
             e.preventDefault();
@@ -465,7 +499,10 @@ var map = {
                     startY: nowPoint.screenY,
                 });
             };
+        }
+            
         });
+        
      },
      start_map_position: start_map_position_funck = function() {
         $(".box").css({
