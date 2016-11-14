@@ -1,6 +1,5 @@
 $(function() {
     // -- data_point 
-    var multitouch = true;
     var Point_Mass = [{
         "point": {
             "id": "Kimra",
@@ -137,36 +136,6 @@ $(function() {
 
     }];
     // -- data_point_end 
-    
-    
-$(window).on("touchstart", function(e) { 
-    //--- event.preventDefault();
-    //--- event.stopPropagation();
-    if(event.targetTouches.length == 2){
-       multitouch = true; 
-    }else{
-       multitouch = false;     
-    }
-    //--console.log(multitouch, "multitouch"); 
-    //--console.log(event.targetTouches.length, "event.targetTouches.length");
-});
-    
-$(window).on("touchmove", function(e) { 
-    //--- event.preventDefault();
-    //--- event.stopPropagation();
-    if(event.targetTouches.length == 2){
-       multitouch = true; 
-    }else{
-       multitouch = false;     
-    }
-    //--console.log(multitouch, "multitouch"); 
-    //--console.log(event.targetTouches.length, "event.targetTouches.length")
-    
-    if(multitouch==false){  
-    }
-    
-});    
-    
 
     // -- create_point_dom
     function create_point_dom() {
@@ -397,12 +366,12 @@ $(window).on("touchmove", function(e) {
     var pinch = new Hammer.Pinch();
     mc.add([pinch]);
     mc.on("pinchin", function(ev) {
-        ev.preventDefault();
-        width_out();   
+        //ev.preventDefault();
+        //width_out();   
     });
     mc.on("pinchout", function(ev) {
-        ev.preventDefault();
-        width_in(); 
+        //ev.preventDefault();
+        //width_in(); 
     });
     mc.on("panmove", function(ev) {
 
@@ -463,22 +432,17 @@ var map = {
         var nowPoint;
         var drag = false;
         $(".box").on('touchstart', function(e) {
-          if(multitouch == false){
              initialPoint = event.changedTouches[0];
              drag = true; 
-          }
             
         }).on('touchend', function() {
-          if(multitouch == false){
              finalPoint = event.changedTouches[0];
              $(this).data({
                 startX: 0,
                 startY: 0,
              });
              drag = false;
-           }
         }).on('touchmove', function(e) {
-            if(multitouch == false){
             nowPoint = event.changedTouches[0];
             //  console.log(nowPoint.screenX, nowPoint.screenY);
             e.preventDefault();
@@ -499,8 +463,6 @@ var map = {
                     startY: nowPoint.screenY,
                 });
             };
-        }
-            
         });
         
      },
