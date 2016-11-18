@@ -23,7 +23,7 @@ $(function() {
         "point": {
             "id": "Gubin_Ugol",
             "type": "active",
-            "vilage_name": "Губин-Угол.",
+            "vilage_name": "Губин-Угол",
             "vilage_type": "vilage",
             "number_of_houses": "44",
             "number_of_people": {
